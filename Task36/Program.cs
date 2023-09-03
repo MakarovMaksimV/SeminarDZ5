@@ -14,6 +14,7 @@ Console.WriteLine("Сумма элементов стоящих на нечёт�
 int FindSumEvenNumbers(int[] array)
 {   
     int sumEvenNumber = 0; 
+
     for (int i = 1; i < array.Length; i += 2)
     {
         sumEvenNumber = sumEvenNumber + array[i];
@@ -24,6 +25,7 @@ int FindSumEvenNumbers(int[] array)
 int FindSumUnevenNumbers(int[] array)
 {   
     int sumUnvenNumber = 0; 
+
     for (int i = 0; i < array.Length; i += 2)
     {
         sumUnvenNumber = sumUnvenNumber + array[i];
@@ -34,6 +36,7 @@ int FindSumUnevenNumbers(int[] array)
 int[] GetRandomArray(int length)
 {
     int[] result = new int[length];
+    
     for (int i = 0; i < length; i++)
     {
         result[i] = new Random().Next(-15, 16);

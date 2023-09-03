@@ -11,7 +11,8 @@ Console.WriteLine("Количество чётных элементов масс
 
 int FindSumEvenNumbers(int[] array)
 {   
-    int count = 0;   
+    int count = 0; 
+
     for (int i=0; i < array.Length; i++)
     {
          if (array[i] % 2 == 0)
@@ -25,6 +26,7 @@ int FindSumEvenNumbers(int[] array)
 int[] GetRandomArray(int length)
 {
     int[] result = new int[length];
+    
     for (int i = 0; i < length; i++)
     {
         result[i] = new Random().Next(100, 1000);
